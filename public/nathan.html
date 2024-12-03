@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nathan Roberto</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+  <link rel="stylesheet" type="text/css" href="/style.css">
+
+</head>
+
+<style>  
+</style>
+
+<body>
+
+  <header>
+    <nav>
+      <div id="logo">
+        NR
+      </div>
+
+      <div id="menu">
+        <ol id="lista-menu">
+          <li>About</li>
+          <li>Training</li>
+          <li>Experience</li>
+          <!-- <li>Work</li> -->
+          <li>Contact</li>
+        </ol>
+        <div id="curriculo"></div>
+        <div id="list_menu"><i class="bi bi-list" style="font-size: x-large;"></i></div>
+      </div>
+
+    </nav>
+  </header>
+
+  <div id="add_decoration">
+    <div id="left_contacts" class="decoration">
+      <ul class="flex_decoration">
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+      </ul>
+      <div class="conteiner_fixed">
+        <div class="fixed_decoration"></div>
+      </div>
+    </div>
+
+    <div id="right_curriculum" class="decoration">
+      <ul class="flex_decoration">
+        <li>T</li>
+      </ul>
+      <div class="conteiner_fixed">
+        <div class="fixed_decoration"></div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section id="section_home">
+      <div id="introduction">
+        Hi, my name is
+        <h1>Nathan Roberto</h1>
+        <div id="avatar">
+
+        </div>
+      </div>
+      <div>
+        <h2>I am Designer and Developer Full Stack in training</h2>
+      </div>
+      <div>
+        <!-- <h3>Nathan Roberto.</h3> -->
+      </div>
+    </section>
+
+    <section id="section_about">
+      <h4>Sobre mim...</h4>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus repellat doloremque eligendi numquam neque
+          adipisci iusto laboriosam quisquam, maxime esse dignissimos aut qui, sunt beatae quod assumenda labore
+          pariatur consectetur!
+        </p>
+      </div>
+    </section>
+
+    <section id="section_training">
+      <h4>Minha formação...</h4>
+      <div id="inner_training">
+        <ul id="nav_training">
+          <li>Formação</li>
+          <li>Soft Skills</li>
+          <li>Hard Skills</li>
+        </ul>
+        <div>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum amet, officiis numquam aliquam voluptate
+          perspiciatis. Ullam obcaecati, nemo dignissimos voluptatibus pariatur saepe quibusdam magnam, asperiores sed,
+          iste vitae commodi maiores.
+        </div>
+      </div>
+    </section>
+
+    <section id="section_jobs">
+      <h4>Onde trabalhei...</h4>
+      <div id="content_jobs">
+        <ul id="bottom_jobs">
+          <li id="first" type="button" onclick="openJob(event,'job1')" class="option_jobs">Trabalho1</li>
+          <li type="button" onclick="openJob(event,'job2')" class="option_jobs">Trabalho2</li>
+          <li type="button" onclick="openJob(event,'job3')" class="option_jobs">Trabalho3</li>
+          <li type="button" onclick="openJob(event,'job4')" class="option_jobs">Trabalho4</li>
+        </ul>
+        <div id="exert_jobs">
+          <div id="job1" class="tab_jobs">
+            <h6>Trabalho1</h6>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ut quam dolorem veniam beatae earum,
+              aspernatur delectus unde repellendus voluptate facere aliquam hic aliquid minima ipsam saepe ex quo
+              deleniti.</p>
+          </div>
+          <div id="job2" class="tab_jobs">
+            <h6>Trabalho2</h6>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ut quam dolorem veniam beatae earum,
+              aspernatur delectus unde repellendus voluptate facere aliquam hic aliquid minima ipsam saepe ex quo
+              deleniti.</p>
+          </div>
+          <div id="job3" class="tab_jobs">
+            <h6>Trabalho3</h6>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ut quam dolorem veniam beatae earum,
+              aspernatur delectus unde repellendus voluptate facere aliquam hic aliquid minima ipsam saepe ex quo
+              deleniti.</p>
+          </div>
+          <div id="job4" class="tab_jobs">
+            <h6>Trabalho4</h6>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ut quam dolorem veniam beatae earum,
+              aspernatur delectus unde repellendus voluptate facere aliquam hic aliquid minima ipsam saepe ex quo
+              deleniti.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section_contact">
+      <h4>Meus contatos...</h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum quas, laudantium quibusdam officia
+        voluptatum, odio labore at totam reprehenderit ullam explicabo eos, quis aut amet consectetur ut doloribus atque
+        nisi.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    ADICIONAIS
+  </footer>
+
+</body>
+
+<script src="script.js"></script>
+
+
+
+</html>
