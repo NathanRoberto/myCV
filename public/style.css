@@ -1,0 +1,300 @@
+/* width 
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  Handle 
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  Handle on hover 
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  */
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-snap-type: y mandatory;
+  }
+
+  body {
+    margin: 0;
+    color: white;
+    background-color: rgb(30, 30, 30);
+  }
+
+  header {
+    top: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 10;
+    position: fixed;
+    transition: top 0.5s;
+    background-image: linear-gradient(rgba(25, 25, 25), rgba(30, 30, 30));
+  }
+
+  nav {
+    height: 100px;
+    display: flex;
+    margin: 0px 5%;
+    transition: 0.3s;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+
+  #logo {
+    /* border-bottom: 5px groove gray; */
+    /* border-right: 5px groove gray; */
+    padding: 10px;
+    border-image: linear-gradient(45deg, #FFFFFF, rgb(28, 149, 158, 0.3)) 10;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(28, 149, 158, 0.3);
+    font-size: x-large;
+    color: rgb(39, 198, 209);
+  }
+
+  #menu {
+    display: flex;
+  }
+
+  #lista-menu {
+    width: 100%;
+    display: flex;
+    /* list-style-type: none; */
+    justify-content: space-around;
+  }
+
+  li {
+    margin: 0 2vh;
+    position: relative;
+  }
+
+  #curriculo {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    max-width: 1600px;
+    padding: 0px 100px;
+  }
+
+  h1 {
+    color: rgb(28, 149, 158);
+  }
+
+  h1,
+  h2,
+  h3 {
+    line-height: 1.1;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  /* #add_decoration{
+  } */
+
+  .decoration {
+    position: fixed;
+  }
+
+  #left_contacts {
+    bottom: 0px;
+    z-index: 10;
+  }
+
+  #right_curriculum {
+    right: 0;
+    bottom: 0;
+  }
+
+  /* .flex_decoration{
+
+  } */
+
+  .conteiner_fixed {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fixed_decoration {
+    margin: auto;
+    height: 100%;
+    border-left: 1px solid rgb(39, 198, 209);
+  }
+
+  section {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    padding: 100px 0px;
+    align-items: center;
+    max-width: max-content;
+    justify-content: center;
+    align-content: center;
+    scroll-snap-align: center none;
+  }
+
+  #section_home {
+    display: flex;
+    margin: 0px auto;
+    max-width: max-content;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #introduction {
+    margin-bottom: 5%;
+  }
+
+  #avatar {
+    width: 150px;
+    height: 150px;
+    margin: 25px auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid white;
+    transform: translateY(0px);
+    animation: float 6s ease-in-out infinite;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
+  }
+
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      transform: translatey(-20px);
+    }
+
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+  }
+
+  #section_about {
+    max-width: max-content;
+  }
+
+  #section_training {
+    width: 100%;
+  }
+
+  #inner_training {
+    width: 100%;
+    display: flex;
+  }
+
+  #nav_training {
+    margin: 0;
+    width: 20%;
+    padding: 0;
+    list-style-type: disc;
+  }
+
+  #section_jobs {
+    align-content: center;
+  }
+
+  /* #content_jobs{
+
+  } */
+
+  #bottom_jobs {
+    float: left;
+    width: 20%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #bottom_jobs li {
+    text-align: left;
+    transition: 0.3s;
+    list-style-type: disclosure-closed;
+  }
+
+  #exert_jobs {
+    width: auto;
+    display: grid;
+  }
+
+  .tab_jobs {
+    border-left: 1px solid gray;
+    float: left;
+    padding: 0px 12px;
+  }
+
+  #bottom_jobs li.active {
+    color: rgb(39, 198, 209);
+  }
+
+  @media screen and (max-width: 768px) {
+
+    #lista-menu,
+    .flex_decoration>li {
+      display: none;
+    }
+
+    #curriculo {
+      display: block;
+    }
+
+    main {
+      padding: 0px 25px;
+    }
+
+    #bottom_jobs{
+      margin: 0%;
+      width: 100%;
+      border: none;
+      height: 100%;
+      display: flex;
+      overflow-x: scroll;
+      border-bottom: 1px solid gray;
+    }
+
+    .option_jobs{
+      border-right: 1px solid white;
+    }
+
+    #nav_training{
+      margin: 0%;
+      width: 100%;
+      border: none;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid gray;
+    }
+
+    #content_jobs, #inner_training {
+      display: contents;
+    }
+
+    .tab_jobs {
+      border: none;
+    }
+  }
