@@ -2,164 +2,394 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nathan Roberto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Roberto</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 
-  <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+    <link rel="stylesheet" type="text/css" href="/style.css">
 
 </head>
 
-<style>  
+<style>
 </style>
 
 <body>
 
-  <header>
-    <nav>
-      <div id="logo">
-        NR
-      </div>
+    <header>
+        <nav>
+            <div id="logo">
+                NR
+            </div>
 
-      <div id="menu">
-        <ol id="lista-menu">
-          <li>About</li>
-          <li>Training</li>
-          <li>Experience</li>
-          <!-- <li>Work</li> -->
-          <li>Contact</li>
-        </ol>
-        <div id="curriculo"></div>
-        <div id="list_menu"><i class="bi bi-list" style="font-size: x-large;"></i></div>
-      </div>
+            <div id="menu">
+                <ol id="lista-menu">
+                    <li><a href="#section_about">Sobre mim</a></li>
+                    <li><a href="#section_training">Formação</a></li>
+                    <li><a href="#section_jobs">Experiência</a></li>
+                    <li><a href="#section_contact">Contato</a></li>
+                </ol>
+                <div id="icon-list"><i class="bi bi-list" style="font-size: x-large;"></i></div>
+            </div>
 
-    </nav>
-  </header>
+        </nav>
+    </header>
 
-  <div id="add_decoration">
-    <div id="left_contacts" class="decoration">
-      <ul class="flex_decoration">
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-      </ul>
-      <div class="conteiner_fixed">
-        <div class="fixed_decoration"></div>
-      </div>
+    <div id="add_decoration">
+        <div id="left_contacts" class="decoration">
+            <ul class="flex_decoration">
+                <li class="svg-bootstrap"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                        fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                </li>
+                <li class="svg-bootstrap"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                        fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                    </svg>
+                </li>
+                <li class="svg-bootstrap"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                        fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671" />
+                        <path
+                            d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791" />
+                    </svg>
+                </li>
+            </ul>
+            <div class="conteiner_fixed">
+                <div class="fixed_decoration"></div>
+            </div>
+        </div>
+
+        <div id="right_curriculum" class="decoration">
+            <ul class="flex_decoration">
+                <li id="curriculo-doc">Modelo word</li>
+            </ul>
+            <div class="conteiner_fixed">
+                <div class="fixed_decoration"></div>
+            </div>
+        </div>
     </div>
 
-    <div id="right_curriculum" class="decoration">
-      <ul class="flex_decoration">
-        <li>T</li>
-      </ul>
-      <div class="conteiner_fixed">
-        <div class="fixed_decoration"></div>
-      </div>
-    </div>
-  </div>
+    <main>
+        <section id="section_home">
+            <div id="introduction">
+                Bem-vindo(a), meu nome é
+                <h1>Nathan Roberto</h1>
+                <div id="avatar">
 
-  <main>
-    <section id="section_home">
-      <div id="introduction">
-        Hi, my name is
-        <h1>Nathan Roberto</h1>
-        <div id="avatar">
+                </div>
+            </div>
+            <div id="subtitle">
+                <span>
+                    Sou Designer & Desenvolvedor Full Stack em Ascensão
+                    <i class="bi bi-rocket-takeoff-fill"></i>
+                </span>
+            </div>
+            <!-- <h2>I am Designer and Developer Full Stack in training</h2> -->
+        </section>
 
+        <section id="section_about">
+            <h4>Sobre mim...</h4>
+            <div id="about-content">
+                <div>
+                    <p class="text-p">
+                        Desde cedo, sempre fui apaixonado pela tecnologia, ficava desmontando e montando aparelhos, com
+                        uma
+                        enorme curiosidade de saber como as coisas funcionavam.
+                    </p>
+                    <p class="text-p">
+                        Foi buscando aprender cada dia mais que iniciei meu primeiro curso de WebDesigner no SENAI, e
+                        não
+                        parei por aí, realizei mais alguns cursos presenciais e a distância na instituição, até que
+                        passei
+                        no vestibular da ETEC na formação de Técnico de Automação Industrial, onde no meu último
+                        semestre
+                        realizei o estágio na área e, em seguida, fui efetivado.
+                    </p>
+                    <p class="text-p">
+                        Finalizando o técnico e o médio, continuei me qualificando realizando cursos nas plataformas até
+                        entrar na faculdade de bacharelado em Ciência da Computação, e durante o curso, tive a
+                        oportunidade
+                        de estagiar no Banco do Brasil por dois anos, onde me qualificou na prática em programação,
+                        análise de dados, metodologias ágeis e em minha comunicação.
+                    </p>
+                    <p class="text-p">
+                        Hoje, indo para meu último semestre de curso com diversos aprendizados e desafios superados,
+                        contínuo expandindo meu conhecimento a cada dia conforme o campo da tecnologia.
+                    </p>
+                </div>
+                <img class="avatar hidden-px" src="image/surfing the net.png" alt="Avatar estudando">
+            </div>
+        </section>
+
+        <section id="section_training">
+            <div id="inner_training" class="content-option">
+                <h4>Minha formação...</h4>
+                <ul id="nav_training">
+                    <li id="first-training" type="button" onclick="openTraining(event,'training1')"
+                        class="option_training">Formação</li>
+                    <li type="button" onclick="openTraining(event,'training2')" class="option_training">Soft Skills</li>
+                    <li type="button" onclick="openTraining(event,'training3')" class="option_training">Hard Skills</li>
+                    <li type="button" onclick="openTraining(event,'training5')" class="option_training">Cursos</li>
+                    <li type="button" onclick="openTraining(event,'training4')" class="option_training">Atualmente</li>
+                </ul>
+                <div id="exert_training">
+                    <div id="training1" class="tab_training">
+                        <div class="content_training">
+                            <div>
+                                <h5>Técnico em Automação Industrial</h5>
+                                <span class="text-sub">ETEC Martin Luther King</span> - 2019 a 2021
+                                <p class="text-p">Responsável pela modernização dos processos produtivos utilizados na
+                                    indústria. Ele projeta máquinas, equipamentos, componentes robóticos, sistemas de
+                                    integração
+                                    e automação industriais.</p>
+                            </div>
+                            <div>
+                                <h5>Bacharelado em Ciência da Computação</h5>
+                                <span class="text-sub">Universidade Cidade de São Paulo</span> - conclusão em 06/2025
+                                <p class="text-p">Estuda aplicações computacionais para criar sistemas e automatizar
+                                    processos
+                                    por meio do processamento digital. O campo abrange o desenvolvimento de algoritmos,
+                                    estruturas de dados, inteligência artificial, sistemas operacionais, bancos de dados
+                                    e redes
+                                    de computadores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="training2" class="tab_training">
+                        <div class="content_training">
+                            <div class="tab-2">
+                                <div><span class="text-sub">Criatividade</span>
+                                    <div class="nivel-circle" qtd="5"></div>
+                                </div>
+                                <div><span class="text-sub">Colaboração</span>
+                                    <div class="nivel-circle" qtd="4"></div>
+                                </div>
+                            </div>
+                            <div class="tab-2">
+                                <div><span class="text-sub">Comunicação</span>
+                                    <div class="nivel-circle" qtd="4"></div>
+                                </div>
+                                <div><span class="text-sub">Adaptabilidade</span>
+                                    <div class="nivel-circle" qtd="4"></div>
+                                </div>
+                            </div>
+                            <div class="tab-2">
+                                <div><span class="text-sub">Flexibilidade</span>
+                                    <div class="nivel-circle" qtd="4"></div>
+                                </div>
+                                <div><span class="text-sub">Conciliação</span>
+                                    <div class="nivel-circle" qtd="3"></div>
+                                </div>
+                            </div>
+                            <div class="tab-2">
+                                <div><span class="text-sub">Resposabilidade</span>
+                                    <div class="nivel-circle" qtd="4"></div>
+                                </div>
+                                <div><span class="text-sub">Inovação</span>
+                                    <div class="nivel-circle" qtd="3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="training3" class="tab_training">
+                        <div class="content_training">
+                            <div class="tab-2">
+                                <div><span class="text-sub">Pacote Office</span>
+                                    <div class="nivel-circle" qtd="4"></div>
+                                </div>
+                                <div><span class="text-sub">Inglês</span>
+                                    <div class="nivel-circle" qtd="3"></div>
+                                </div>
+                            </div>
+                            <div class="tab-2">
+                                <div><span class="text-sub">JavaScript</span>
+                                    <div class="nivel-circle" qtd="4"></div>
+                                </div>
+                                <div><span class="text-sub">React</span>
+                                    <div class="nivel-circle" qtd="3"></div>
+                                </div>
+                            </div>
+                            <div class="tab-2">
+                                <div><span class="text-sub">NodeJS</span>
+                                    <div class="nivel-circle" qtd="3"></div>
+                                </div>
+                                <div><span class="text-sub">MySQL</span>
+                                    <div class="nivel-circle" qtd="3"></div>
+                                </div>
+                            </div>
+                            <div class="tab-2">
+                                <div><span class="text-sub">Python</span>
+                                    <div class="nivel-circle" qtd="3"></div>
+                                </div>
+                                <div><span class="text-sub">Django</span>
+                                    <div class="nivel-circle" qtd="2"></div>
+                                </div>
+                            </div>
+                            <div class="tab-2">
+                                <div><span class="text-sub">Java</span>
+                                    <div class="nivel-circle" qtd="2"></div>
+                                </div>
+                                <div><span class="text-sub">Git / UX</span>
+                                    <div class="nivel-circle" qtd="3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="training4" class="tab_training">
+                        <div class="content_training">
+                            <div>
+                                <span class="text-sub">Universidade Cidade de São Paulo</span> - conclusão em 06/2025
+                                <p class="text-p">
+                                    Atualmente, estou aprimorando meus conhecimentos em Desenvolvimento de Software e
+                                    Análise
+                                    de dados, com ênfase em Java e Python, com seus frameworks <i>Spring, Django</i>
+                                </p>
+                                <p class="text-p">
+                                    Proseguirei o curso <i>Hackers do Bem</i>, onde já conclui a fase de "Nivelamento",
+                                    abordando tópicos essenciais para o campo de cibersegurança.
+                                </p>
+                                <p class="text-p">
+                                    Continuarei aprofundando meus conhecimentos em JavaScript, tanto para o
+                                    desenvolvimento Front-End quanto Back-End, com o objetivo de aplicar esses
+                                    conhecimentos em projetos reais e em contextos profissionais.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="training5" class="tab_training">
+                        <div>
+                            <span class="text-sub">Alura</span> - 19 curscos conluídos (148 horas)
+                            <p class="text-p">Diversos cursos nas áreas de Programação, Desenvolvimento Web, incluindo
+                                cursos como, <i>Agilidade e DevOps, JavaScript, Gestão agíl</i></p>
+                        </div>
+                        <div>
+                            <span class="text-sub">Fundação Bradesco</span> - 15 curscos conluídos (+ de 288 horas)
+                            <p class="text-p">Cursos focados em Produtividade, TI, Negócios e Inovação, como<i> Soft
+                                    Skills, Java, Gestão, Desing e desenvolvimento pessoal e profissional</i></p>
+                        </div>
+                        <div>
+                            <span class="text-sub">Microsoft Learn</span> - nível 7 (13450 pontos)
+                            <p class="text-p">Capacitação nas áreas de Desenvolvimento de Software e Web, Tecnologia,
+                                como <i>Python para análise de dados e desing para web</i></p>
+                        </div>
+                        <div>
+                            <span class="text-sub">SENAI</span> - 10 curscos conluídos (488 horas)
+                            <p class="text-p">Qualificação em Soft Skills, Automação de Processos e Industrial,
+                                Desenvolvimento pessoal e profissional como, <i>Pacote Office, WebDesigner,
+                                    SolidWorks</i></p>
+                        </div>
+                        <div>
+                            <span class="text-sub">Rocketseat</span> - Conectar (143 horas)
+                            <p class="text-p">Concluí a trilha de Conectar com o aprendizado de<i>fundamentos da
+                                    programação, computadores e da internet.</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section_jobs">
+            <div id="inner_jobs">
+                <h4>Onde trabalhei...</h4>
+                <div id="content_jobs" class="content-option">
+                    <ul id="bottom_jobs">
+                        <li id="first-job" type="button" onclick="openJob(event,'job1')" class="option_jobs">Sauber
+                            System</li>
+                        <li type="button" onclick="openJob(event,'job2')" class="option_jobs">Banco do Brasil</li>
+                        <li type="button" onclick="openJob(event,'job3')" class="option_jobs">Outras vivências</li>
+                    </ul>
+                    <div id="exert_jobs">
+                        <div id="job1" class="tab_jobs">
+                            <h5>Sauber System Ambiental</h5>
+                            <span class="text-sub">Técico de Automação Industrial</span>| Setembro de 2020 - Abril de
+                            2021
+                            <p class="text-p">Responsável pela produção, manutenção de ferramentas ambientais
+                                automatizados em linhas de produção industrial.</p>
+                            <p class="text-p">Planejamento e organização de cronogramas de manutenção preventiva e
+                                corretiva.</p>
+                            <p class="text-p">Suporte técnico e consultoria para clientes, gestão de demandas de
+                                clientes relacionadas a sistemas automatizados na manutenção.</p>
+                        </div>
+                        <div id="job2" class="tab_jobs">
+                            <h5>Banco do Brasil</h5>
+                            <span class="text-sub">Estágio de Tecnologia da Informação </span>| Outubro de 2022 -
+                            Outubro de 2024
+                            <p class="text-p">Elaboração de Códgios de Programação e flows de Low Code da Plataforma
+                                Service Now</p>
+                            <p class="text-p">Correção de bugs nos sistemas departamentais em linguagem de programação
+                                ou Low Code</p>
+                            <p class="text-p">Apoio às equipes do desenvolvimento do centro, na manuntençãoo e no
+                                desenvolvimento dos sistemas departamentais</p>
+                            <p class="text-p">Apoio nos ritos de SCRUM e no preenchimento e atualização dos cards de
+                                KANBAN da equipe</p>
+                        </div>
+                        <div id="job3" class="tab_jobs">
+                            <h5>Outras vivências</h5>
+                            <span class="text-sub">Vendedor</span>
+                            <p class="text-p">Ressponsável pela produção, manutenção de ferramentas ambientais
+                                automatizados em linhas de produção industrial.</p>
+                            <p class="text-p">Planejamento e organização de cronogramas de manutenção preventiva e
+                                corretiva.</p>
+                            <span class="text-sub">Administração </span>
+                            <p class="text-p">Responsável pela produção, manutenção de ferramentas ambientais
+                                automatizados em linhas de produção industrial.</p>
+                            <p class="text-p">Planejamento e organização de cronogramas de manutenção preventiva e
+                                corretiva.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section_contact">
+            <h4>Meus contatos...</h4>
+            <div>
+                <ul>
+                    <li>
+                        <span class="text-sub">Email:</span> nathanroberto38@gmail.com<br>
+                    </li>
+                    <li>
+                        <span class="text-sub">LinkedIn:</span> <a
+                            href="https://www.linkedin.com/in/nathan-roberto-5b8202154/">Nathan Roberto</a><br>
+                    </li>
+                    <li>
+                        <span class="text-sub">GitHub:</span> <a
+                            href="https://github.com/NathanRoberto?tab=repositories">Nathan Roberto</a><br>
+                    </li>
+                    <li>
+                        <span class="text-sub">Localização:</span> São Paulo, SP, Brasil<br>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="content-footer">
+            <div id="img-footer">
+                <img class="avatar" src="image/studying.png" alt="Avatar estudando">
+            </div>
+            <div>
+                © 2024 Nathan Roberto. <br>Todos os direitos reservados.<br><br>
+                <span>
+                    Última atualização: Dezembro de 2024
+                </span>
+            </div>
         </div>
-      </div>
-      <div>
-        <h2>I am Designer and Developer Full Stack in training</h2>
-      </div>
-      <div>
-        <!-- <h3>Nathan Roberto.</h3> -->
-      </div>
-    </section>
-
-    <section id="section_about">
-      <h4>Sobre mim...</h4>
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus repellat doloremque eligendi numquam neque
-          adipisci iusto laboriosam quisquam, maxime esse dignissimos aut qui, sunt beatae quod assumenda labore
-          pariatur consectetur!
-        </p>
-      </div>
-    </section>
-
-    <section id="section_training">
-      <h4>Minha formação...</h4>
-      <div id="inner_training">
-        <ul id="nav_training">
-          <li>Formação</li>
-          <li>Soft Skills</li>
-          <li>Hard Skills</li>
-        </ul>
-        <div>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum amet, officiis numquam aliquam voluptate
-          perspiciatis. Ullam obcaecati, nemo dignissimos voluptatibus pariatur saepe quibusdam magnam, asperiores sed,
-          iste vitae commodi maiores.
-        </div>
-      </div>
-    </section>
-
-    <section id="section_jobs">
-      <h4>Onde trabalhei...</h4>
-      <div id="content_jobs">
-        <ul id="bottom_jobs">
-          <li id="first" type="button" onclick="openJob(event,'job1')" class="option_jobs">Trabalho1</li>
-          <li type="button" onclick="openJob(event,'job2')" class="option_jobs">Trabalho2</li>
-          <li type="button" onclick="openJob(event,'job3')" class="option_jobs">Trabalho3</li>
-          <li type="button" onclick="openJob(event,'job4')" class="option_jobs">Trabalho4</li>
-        </ul>
-        <div id="exert_jobs">
-          <div id="job1" class="tab_jobs">
-            <h6>Trabalho1</h6>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ut quam dolorem veniam beatae earum,
-              aspernatur delectus unde repellendus voluptate facere aliquam hic aliquid minima ipsam saepe ex quo
-              deleniti.</p>
-          </div>
-          <div id="job2" class="tab_jobs">
-            <h6>Trabalho2</h6>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ut quam dolorem veniam beatae earum,
-              aspernatur delectus unde repellendus voluptate facere aliquam hic aliquid minima ipsam saepe ex quo
-              deleniti.</p>
-          </div>
-          <div id="job3" class="tab_jobs">
-            <h6>Trabalho3</h6>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ut quam dolorem veniam beatae earum,
-              aspernatur delectus unde repellendus voluptate facere aliquam hic aliquid minima ipsam saepe ex quo
-              deleniti.</p>
-          </div>
-          <div id="job4" class="tab_jobs">
-            <h6>Trabalho4</h6>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora ut quam dolorem veniam beatae earum,
-              aspernatur delectus unde repellendus voluptate facere aliquam hic aliquid minima ipsam saepe ex quo
-              deleniti.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="section_contact">
-      <h4>Meus contatos...</h4>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum quas, laudantium quibusdam officia
-        voluptatum, odio labore at totam reprehenderit ullam explicabo eos, quis aut amet consectetur ut doloribus atque
-        nisi.</p>
-    </section>
-
-  </main>
-
-  <footer>
-    ADICIONAIS
-  </footer>
+    </footer>
 
 </body>
 
