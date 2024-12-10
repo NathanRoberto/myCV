@@ -537,7 +537,7 @@ footer{
     #exert_training {
         width: 100%;
         height: calc(100% - 1.2rem - 40px);
-        margin-top: 30px;
+        margin-top: 10px;
         margin-bottom: 30px;
     }
     
@@ -548,5 +548,6 @@ footer{
     .tab_jobs,
     .tab_training {
         border: none;
+        margin-top: 20px;
     }
 }
