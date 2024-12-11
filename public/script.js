@@ -7,6 +7,11 @@ window.onscroll = function () {
     } else {
         $("header").css("top", -sizeHeader)
     } prevScrollPos = currentScrollPos
+
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
 }
 
 function openJob(evt, job) {
@@ -20,22 +25,32 @@ function openJob(evt, job) {
     for (i = 0; i < optJob.length; i++) {
         optJob[i].className = optJob[i].className.replace(" active", "");
     }
-    document.getElementById(job).style.display = "block";
+    // document.getElementById(job).style.display = "block";
+    if ($(window).width() <= 768) {
+        $('#' + job).slideDown(750); 
+    } else {
+        $('#' + job).fadeIn(750);
+    }
     evt.currentTarget.className += " active";
 }
 
 function openTraining(evt, training) {
-    var tabTraing, optTraining
-    tabTraing = document.getElementsByClassName("tab_training");
+    var tabTraining, optTraining
+    tabTraining = document.getElementsByClassName("tab_training");
     optTraining = document.getElementsByClassName("option_training")
 
-    for (i = 0; i < tabTraing.length; i++) {
-        tabTraing[i].style.display = 'none'
+    for (i = 0; i < tabTraining.length; i++) {
+        tabTraining[i].style.display = 'none'
     }
     for (i = 0; i < optTraining.length; i++) {
         optTraining[i].className = optTraining[i].className.replace(" active", "");
     }
-    document.getElementById(training).style.display = "block";
+    // document.getElementById(training).style.display = "block";
+    if ($(window).width() <= 768) {
+        $('#' + training).slideDown(750);
+    } else {
+        $('#' + training).fadeIn(750); 
+    }
     evt.currentTarget.className += " active";
 }
 
@@ -50,8 +65,16 @@ $(".nivel-circle").each(function () {
     const qtd = parseInt($(this).attr('qtd'), 10);
 
     $(this).children('.bola').each(function (index) {
-        if(index < qtd){
+        if (index < qtd) {
             $(this).addClass('pintar')
         }
     })
 });
+
+function openNav() {
+    document.getElementById("sidenav").style.width = "250px";
+    $("header").css("top", -sizeHeader)
+    $(".closeNav, main").click(function () {
+        document.getElementById("sidenav").style.width = "0";
+    })
+}
