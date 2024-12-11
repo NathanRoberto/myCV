@@ -58,18 +58,18 @@ body {
     background-color: rgb(30, 30, 30);
 }
 
-a{
+a {
     color: white;
 }
 
-a:hover{
+a:hover {
     color: var(--cor-1);
 }
 
 header {
     top: 0;
     width: 100%;
-    height: 10%;
+    height: 13%;
     z-index: 10;
     position: fixed;
     transition: top 0.5s;
@@ -77,7 +77,7 @@ header {
 }
 
 nav {
-    height: 100px;
+    height: 100%;
     display: flex;
     margin: 0px 5%;
     transition: 0.3s;
@@ -109,7 +109,7 @@ nav {
 }
 
 
-#lista-menu a{
+#lista-menu a {
     text-decoration: none;
 }
 
@@ -121,6 +121,39 @@ nav {
 
 #icon-list {
     display: none;
+}
+
+.progress-container {
+    width: 100%;
+    height: 2.5px;
+}
+
+.progress-bar {
+    height: 2.5px;
+    background: var(--cor-1);
+    width: 0%;
+}
+
+#sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 11;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 
 li {
@@ -290,6 +323,13 @@ section {
     }
 }
 
+#inner_about {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+}
+
 #about-content {
     margin-top: 1vh;
     gap: 20px;
@@ -337,7 +377,7 @@ section {
     box-sizing: border-box;
     padding: 0;
     position: sticky;
-    height: calc(100% - 1.275rem + .3vw);
+    height: calc(100% - 1.375rem + .3vw);
     list-style-type: disc;
 }
 
@@ -378,7 +418,9 @@ section {
     padding: 0px 12px;
 }
 
-.tab_jobs div .text-p:nth-child(2){
+
+
+.tab_jobs div .text-p:nth-child(2) {
     margin-bottom: 0;
 }
 
@@ -406,7 +448,7 @@ section {
 }
 
 
-footer{
+footer {
     width: 100%;
     margin: auto;
     overflow: hidden;
@@ -421,14 +463,14 @@ footer{
     scroll-snap-align: center none;
 }
 
-#content-footer{
+#content-footer {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-#img-footer{
+#img-footer {
     width: 100%;
     height: auto;
     margin-bottom: 25px;
@@ -493,6 +535,12 @@ footer{
         display: block !important;
     }
 
+    .content_jobs {
+        height: auto !important;
+        margin-top: 20px;
+        display: block !important;
+    }
+
     .option_training {
         overflow: visible;
         text-align: center;
@@ -536,11 +584,11 @@ footer{
     #exert_jobs,
     #exert_training {
         width: 100%;
-        height: calc(100% - 1.2rem - 40px);
-        margin-top: 10px;
-        margin-bottom: 30px;
+        height: calc(100% - 1.375rem - 40px - .5rem);
+        /* margin-top: 10px; */
+        /* margin-bottom: 30px; */
     }
-    
+
     .content-option {
         display: contents;
     }
@@ -548,6 +596,6 @@ footer{
     .tab_jobs,
     .tab_training {
         border: none;
-        margin-top: 20px;
+        /* margin-top: 20px; */
     }
 }
