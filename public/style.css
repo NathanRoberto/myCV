@@ -48,6 +48,10 @@
     box-sizing: border-box;
 }
 
+h5{
+    font-weight: bold;
+}
+
 html {
     scroll-snap-type: y mandatory;
 }
@@ -60,10 +64,12 @@ body {
 
 a {
     color: white;
+    font-weight: bold;
 }
 
 a:hover {
     color: var(--cor-1);
+    font-weight: bold;
 }
 
 header {
@@ -90,11 +96,13 @@ nav {
     /* border-bottom: 5px groove gray; */
     /* border-right: 5px groove gray; */
     padding: 10px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border-image: linear-gradient(45deg, #FFFFFF, rgb(28, 149, 158, 0.3)) 10;
     border-radius: 5px;
-    box-shadow: 3px 3px 5px rgba(28, 149, 158, 0.3);
+    /* box-shadow: 3px 3px 5px rgba(28, 149, 158, 0.3); */
     font-size: x-large;
-    color: rgb(39, 198, 209);
+    color: rgb(39, 198, 209, 0.5);
 }
 
 #menu {
@@ -188,7 +196,7 @@ h4 {
 #subtitle {
     display: flex;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 1.1;
     font-weight: 600;
     text-transform: uppercase;
@@ -342,11 +350,37 @@ section {
     font-weight: lighter;
     text-indent: 20px;
     line-height: 1.6;
+    margin-top: .5em;
+    margin-bottom: 0;
+}
+
+.text-contrast{
+    color: var(--cor-1);
+    font-weight: bold;
+}
+
+.text-contrast2{
+    font-weight: bold;
+}
+
+.text-coment{
+    font-style: italic;
 }
 
 .text-sub {
-    font-weight: bold;
+    margin-bottom: 10px;
 }
+
+.text-sub2{
+    font-size: small;
+    font-weight: normal;
+    color: gray;
+}
+
+.content-text{
+    margin-top: 1.2rem;
+}
+
 
 .text-res {
     font-size: smaller;
@@ -418,17 +452,29 @@ section {
     padding: 0px 12px;
 }
 
-
-
-.tab_jobs div .text-p:nth-child(2) {
-    margin-bottom: 0;
+#coment-bb{
+    font-size: small;
+    margin-left: auto;
+    color: var(--cor-1);
+    cursor: pointer;
 }
+
+.coment-bb{
+    display: none;
+}
+
+/* .tab_jobs div .text-p:nth-child(2) {
+    margin-bottom: 0;
+} */
 
 .content_training {
     display: grid !important;
     height: 100%;
     overflow: auto;
-    place-items: center;
+}
+
+.content-curso{
+    margin-bottom: 15px;
 }
 
 .tab-2 {
@@ -445,6 +491,7 @@ section {
 #bottom_jobs li.active,
 #nav_training li.active {
     color: rgb(39, 198, 209);
+    font-weight: bold;
 }
 
 
@@ -470,12 +517,27 @@ footer {
     justify-content: space-between;
 }
 
+#text-vinci{
+    display: block;
+    font-size: smaller;
+    font-family: cursive;
+}
+
+#span-vinci{
+    float: right;
+    font-size: x-small;
+}
+
 #img-footer {
     width: 100%;
     height: auto;
-    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
+.text-footer{
+    font-size: smaller;
+}
 
 .bola {
     width: 20px;
@@ -506,9 +568,13 @@ footer {
         font-size: 1.2rem;
     }
 
-    /* section{
-        align-content: normal;
-    } */
+    h5 span{
+        display: block;
+    }
+
+    section{
+        padding: 125px 0px 50px 0px;
+    }
 
     #section_training,
     #section_jobs {
@@ -564,7 +630,7 @@ footer {
     }
 
     #subtitle {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     #nav_training,

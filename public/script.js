@@ -1,11 +1,15 @@
 var prevScrollPos = window.pageYOffset;
-var sizeHeader = $("header").height()
+var sizeHeader = document.querySelector("header").offsetHeight;
+
+// Mostra ao usuario onde o tamanho da pagina
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollPos > currentScrollPos) {
         $("header").css("top", "0")
+        // document.querySelector("header").style.top = "0";
     } else {
         $("header").css("top", -sizeHeader)
+        // document.querySelector("header").style.top = -sizeHeader;
     } prevScrollPos = currentScrollPos
 
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
