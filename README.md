@@ -1,5 +1,5 @@
-- Currículo Online - Nathan Roberto 
-Este é um projeto de página simples desenvolvida com HTML, CSS e JavaScript, com o objetivo de apresentar meu currículo de forma acessível e visual para recrutadores e empresas.
+Currículo Online - Nathan Roberto 
+- Este é um projeto de página simples desenvolvida com HTML, CSS e JavaScript, com o objetivo de apresentar meu currículo de forma acessível e visual para recrutadores e empresas.
 
 Você pode visualizar a página diretamente no Vercel:
 - https://my-cv-rho-murex.vercel.app/
